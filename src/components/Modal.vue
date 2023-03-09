@@ -1,7 +1,10 @@
 <template>
    <div class="modal-background fade-in">
         <div class="modal-container">
-            <slot>Texto por si no se manda nada</slot>
+            <slot name="header">Texto por si no se manda nada</slot>
+            <hr>
+            <slot name="body">Texto por si no se manda nada</slot>
+            <slot name="footer">Texto por si no se manda nada</slot>
         </div>
    </div>
 </template>

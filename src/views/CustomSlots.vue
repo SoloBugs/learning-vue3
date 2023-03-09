@@ -3,10 +3,18 @@
     <button>Abrir Modal</button>
 
     <modal>
-        <h3>Hola</h3>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        <template v-slot:header>
+            <h3>Hola</h3>
+        </template>
+        <template v-slot:body>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        </template>
+        <template v-slot:footer>
+            <button>Cerrar</button>
+        </template>
+        
 
-        <button>Cerrar</button>
+        
     </modal>
 </template>
 
